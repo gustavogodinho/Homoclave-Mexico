@@ -68,7 +68,8 @@
       rfc_field_homoclave = document.getElementById("homoclave-result")
       rfc_field_digito = document.getElementById("digito-result")
       born_date = born_date.split('/')
-      rfc_field.value = rfc.HomoclaveRFC(name, father_surname, mother_surname);
+      h = rfc.getHomoclave(name, father_surname, mother_surname);
+      rfc_field.value = h;
 
     });
   </script>
